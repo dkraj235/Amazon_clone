@@ -1,2 +1,2 @@
 # Amazon_clone
-Amazon clone Frontend Website using Html CSS
+Frontend Website using Html CSS
