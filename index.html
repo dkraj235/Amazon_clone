@@ -2,20 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>Amazon Clone</title>
     <link rel="icon" href="css/images/payment.svg">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto&display=swap" rel="stylesheet">
 
+</head>
 <body>
 
     <header>
+      <div class="mbbNav">
         <div class="navbar">
-           <div class="nav-logo border">
-            <div class="logo"></div>
+
+             <div class="menuIcondisply border">
+                 <i class="fa-solid fa-bars all-cursor menuIcon menuIcondisply"></i>
+             </div>
+
+             <div class="nav-mob-space">
+
+              <div class="nav-logo border">
+               <div class="logo"></div>
+              </div>
            </div>
+
+
+
 
            <div class="nav-loc border">
             <p class="loc-first">Deliver to</p>
@@ -40,21 +55,30 @@
 
          <!-- Nav lang -->
 
-           <!-- <div class="nav-lang border">
+           <div class="nav-lang border">
             <div class="lang-icon">
                 <i class="fa-solid fa-flag-usa"></i>
                 <select class="lang-select" name="" id="">
                     <option value="">EN</option>
                 </select>
             </div>
-           </div> -->
+           </div>
 
            <div class="nav-accnt border">
             <div class="hello">
-               <p><span>Hello,sign in</span></p>
+               <p class="mob-none"><span>Hello,sign in</span></p>
             </div>
+
+
+              <div class="deskNone">
+                <p class="mob-sign"><span>sign in›&nbsp;</span> </p>
+               <i class="fa-regular fa-2x fa-user user-icon"> </i>
+
+              </div>
+
+
             <div class="sign-line-2">
-               <p>Account & Lists</p>
+               <p class="mob-none">Account & Lists</p>
             </div>
            </div>
 
@@ -73,14 +97,29 @@
                 <span class="cart-text">Cart</span>
             </div>
            </div>
-         
+
         </div>
- 
-    
-  
+
+
+        <div class="mobNav-search">
+         <!-- <select  class="search-select" id="">
+             <option value="">All</option>
+             <option value="">Boy</option>
+             <option value="">Girl</option>
+         </select> -->
+         <input placeholder="Search Amazon.in" type="text" class="search-amazon">
+         <div class="search-icon">
+             <i class="fa-solid fa-magnifying-glass search-color"></i>
+         </div>
+      </div>
+
+   </div>
+
+  <!-- pannel  -->
+
         <div class="pannel">
             <div class="all border">
-                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-bars all-cursor"></i>
                 <p class="all-content">All</p>
             </div>
             <div class="links">
@@ -132,7 +171,7 @@
                     <h2>shop best-selling categories</h2>
                     <div class="box-image" style="background: url(css/images/box4_image.jpg);"></div>
                     <p class="hero-clickable">shop more</p>
-                </div> 
+                </div>
             </div>
         </div>
 
@@ -164,19 +203,19 @@
                     <h2>Shop activity trackers and smartwatches</h2>
                     <div class="box-image" style="background: url(css/images/box8_image.jpg);"></div>
                     <p class="hero-clickable">shop more</p>
-                </div> 
+                </div>
             </div>
         </div>
-    
 
-       
+
+
         <footer>
             <div class="panel-1">
                 <div class="back-to">
                     <p class="backto-top">Back to top</p>
                 </div>
             </div>
-           
+
             <div class="panel2">
              <div class="footer">
                 <div class="lin-col1 f-col-link">
@@ -202,12 +241,12 @@
                 <div class="f-col-link">
                     <p class="f-lin-header"> Amazon Payment Products</p>
                     <p> Amazon Business Card</p>
-                    <p>Shop with Points</p> 
+                    <p>Shop with Points</p>
                     <p>Reload Your Balance</p>
                     <p>Amazon Currency Converter</p>
                 </div>
                 <div class="f-col-link fcol4">
-                    <P class="f-lin-header"> Let Us Help You </P>              
+                    <P class="f-lin-header"> Let Us Help You </P>
                     <P> Amazon and COVID-19</P>
                     <P> Your Account</P>
                     <P> Your Orders</P>
@@ -225,7 +264,7 @@
             </div>
          </div>
 
-          
+
         </footer>
 
 </body>

@@ -3,6 +3,13 @@
     padding: 0;
     border: border-box;
     font-family: Arial, sans-serif;
+    /* font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif; */
+}
+
+body{ 
+  min-width: 100vw;
+  overflow-x: hidden ;
 }
 
 .navbar{
@@ -14,15 +21,29 @@
  align-items: center;
 }
 
+.menuIcondisply{
+  display: none;
+}
+
+.mobNav-search{
+  display: none;
+}
+
+.deskNone{
+  display: none;
+}
+
 .nav-logo{
     height: 50px;
     width: 100px;
-}
+ }
+
 .logo{
 background-image: url(images/amazon_logo.png);
 background-size: cover;
 height: 50px;
 width:100%;
+cursor: pointer; 
 }
 
 .border{
@@ -33,12 +54,10 @@ width:100%;
     border: 2px solid #fff;
 }
 
-/* .nav-loc{
-    height: 50px;
-    width: 80px;
-    margin: 5px 2px 5px 0px;
-    padding: 0 9px;
-} */
+.nav-loc{
+    cursor: pointer; 
+}
+
 .loc-first{
     margin-left:15px;
     font-size: 0.8rem;
@@ -51,8 +70,7 @@ width:100%;
 }
 
 .add-icon{
-    display: flex;
-    /* align-items: center; */
+    display: flex; 
 }
 
 /* nav search */
@@ -69,8 +87,7 @@ width:100%;
    color:#0F1111;
    background-color: #f3f3f3;
    border-top-left-radius: 4px;
-   border-bottom-left-radius: 4px;
-   /* border-radius: 4px; */
+   border-bottom-left-radius: 4px; 
    border: none;
 }
 
@@ -86,7 +103,7 @@ width:100%;
     justify-content: center;
     align-items: center;
     border-top-right-radius: 4px;
-    border-bottom-right-radius: 4px; 
+    border-bottom-right-radius: 4px;
     background-color: #FF9900;
 }
 
@@ -99,12 +116,18 @@ width:100%;
 
 .lang-select{
     height: 15px;
+    cursor: pointer;
 }
+
 .lang-icon{
     height: 16px;
 }
 
 /* Sign In */
+
+.nav-accnt{
+    cursor: pointer;
+}
 
 .hello{
     font: 1em sans-serif;
@@ -112,6 +135,7 @@ width:100%;
     height: 14px;
     color: #fff;
 }
+
 .sign-line-2{
     color: #ffffff;
     font-size: 0.85rem;
@@ -120,8 +144,11 @@ width:100%;
 
 /* Nav Returns */
 
+.nav-returns{
+    cursor: pointer;
 
-
+}
+ 
 .returns{
     font: 1em sans-serif;
     font-size: 0.7rem;
@@ -129,7 +156,10 @@ width:100%;
     color: #fff;
 }
 
+.nav-cart{
+    cursor: pointer;
 
+}
 .cart-text{
     font-size: 14px;
     font: 1em sans-serif;
@@ -140,49 +170,50 @@ width:100%;
 
 .pannel{
     display: flex;
+    justify-content: space-evenly;
     align-items: center;
     height: 39px;
     background-color: #232f3e;
-    padding-left: 1.5rem;
+    padding:0px 14px;
+}
+
+.all-cursor{
+    cursor: pointer;
+    padding-right: 5px;
 }
 
 .all{
     display: flex;
-    width: 59px;
+    width: auto;
     color:#fff;
-    padding:8px 9px;
 }
-
-.all-content{
-    margin-left: 3px;
-}
-
+ 
 .pan-anc{
     color:#ffffff;
     text-decoration: none;
     font: 14px sans-serif;
     margin: 5px 0px 6px;
     padding: 8px 9px;
-    
+
 }
+
 .links{
     width: 80%;
 }
-
-
+ 
 /* Hero Section */
 
 .hero{
     background: url(images/hero_image.jpg);
-    background-size:cover;    
+    background-size:cover;
     height: 400px;
     width: 100%;
-    display: flex; 
+    display: flex;
     justify-content: center;
     align-items: flex-end;
     padding-bottom: 25px;
     font-size: 14px;
-    
+
 }
 
 .hero-msg{
@@ -222,7 +253,7 @@ width:100%;
     background-size: cover;
     background-repeat: no-repeat;
     height: 300px;
-    /* width: 100%; */
+    cursor: pointer;
 }
 .box-content{
     margin-left: 1rem;
@@ -266,11 +297,13 @@ width:100%;
 
 .footer p{
     margin: 6px 0 12px;
+    cursor: pointer;
 }
 
 .fcol4{
     width: 138px;
 }
+
 
 .panel3{
     background-color: #232f3e;
@@ -286,83 +319,156 @@ width:100%;
     background-size: cover;
     height: 50px;
     width:100px;
+    cursor: pointer;
 }
 
 
 /* Responsive for all other devices*/
 
-  /* 
+  /*
     ##Device = Low Resolution Tablets, Mobiles (Landscape)
     ##Screen = B/w 481px to 767px
   */
-  
-  @media (min-width: 481px) and (max-width: 767px) {
+
+  @media (min-width: 320px) and (max-width: 670px) {
+ 
+
     .navbar{
-        height: 300px;
+        height: 48px;
         width: 100%;
-        visibility: hidden;
+        background: #232f3e;
+        justify-content:  flex-start;
     }
-    .nav-loc{
-        visibility: hidden;
+
+    .border:hover{
+      border: none;
     }
-    .nav-search{
+
+    .nav-loc, .nav-lang, .nav-returns,.nav-search, .mob-none , .cart-text{
         display: none;
+      }
+
+    .hello{
+      display: flex;
+      justify-content: center;
+      align-items: center ;
     }
+
+    .menuIcondisply{
+      display: block;
+    }
+
+    .menuIcon{
+      padding-left: 0.85rem;
+      font-size: 1.5rem;
+      font-weight: 300;
+    }
+
+    .nav-mob-space{
+       flex: 2;
+    }
+
+   .deskNone{
+     display: block;
+     display: flex;
+   }
+
+    .mob-sign{
+      font-family: 'Roboto', sans-serif;
+      font-size: 1rem;
+      font-weight: 700;
+    }
+    .user-icon{
+      font-size: 20px;
+    }
+
+    .nav-cart{
+      padding: 0.85rem
+    }
+
+    .pannel{
+      display: none;
+    }
+
+    .mbbNav{
+      display: flex;
+      flex-direction: column;
+      background-color: #232f3e;
+    }
+
+    .mobNav-search{
+      display: block;
+      display: flex;
+      justify-content: center;
+      margin: 10px auto 7px;
+      height: 40px;
+      width: 95%;
+
+    }
+
+    .search-amazon{
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        border-top-right-radius: none;
+        border-bottom-right-radius: none;
+        padding: 10px;
+    }
+ 
   }
-  
-  /* 
+
+  /*
     ##Device = Most of the Smartphones Mobiles (Portrait)
     ##Screen = B/w 320px to 479px
   */
-  
+
   @media (min-width: 320px) and (max-width: 480px) {
-    
+
     /* CSS */
-    
+
   }
 
 
-/* 
+/*
   ##Device = Desktops
   ##Screen = 1281px to higher resolution desktops
 */
 
-@media (min-width: 1281px) {
-  
+ @media (min-width: 1281px) {
+
     /* CSS */
-    
-  }
-  
-  /* 
+
+ }
+
+  /*
     ##Device = Laptops, Desktops
     ##Screen = B/w 1025px to 1280px
   */
-  
+
   @media (min-width: 1025px) and (max-width: 1280px) {
-    
+
     /* CSS */
-    
+
   }
-  
-  /* 
+
+  /*
     ##Device = Tablets, Ipads (portrait)
     ##Screen = B/w 768px to 1024px
   */
-  
+
   @media (min-width: 768px) and (max-width: 1024px) {
-    
+
     /* CSS */
-    
+
   }
-  
-  /* 
+
+  /*
     ##Device = Tablets, Ipads (landscape)
     ##Screen = B/w 768px to 1024px
   */
-  
+
   @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-    
+
     /* CSS */
-    
+
   }
   
