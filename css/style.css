@@ -10,6 +10,7 @@
 body{ 
   min-width: 100vw;
   overflow-x: hidden ;
+  
 }
 
 .navbar{
@@ -176,7 +177,7 @@ cursor: pointer;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    height: 55px;
+    height: 50px;
     background-color: #232f3e;
     padding:0px 14px;
 }
@@ -192,7 +193,9 @@ cursor: pointer;
     color:#fff;
 }
 
- 
+ .pan-shop{
+  display: none;
+ }
  
 .pan-anc{
     color:#ffffff;
@@ -350,8 +353,10 @@ cursor: pointer;
     .nav-loc, .nav-lang, .nav-returns,.nav-search, .mob-none , .cart-text{
         display: none;
       }
+     
+       
 
-      .pannel, .mobLinks, .menuIcondisply{
+      .pannel, .mobLinks, .menuIcondisply, .pan-shop{
         display: block;
       }
   
