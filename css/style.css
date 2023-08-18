@@ -330,7 +330,7 @@ cursor: pointer;
     ##Screen = B/w 481px to 767px
   */
 
-  @media (min-width: 320px) and (max-width: 670px) {
+  @media (min-width: 200px) and (max-width: 670px) {
  
 
     .navbar{
