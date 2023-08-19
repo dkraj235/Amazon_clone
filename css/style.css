@@ -13,11 +13,7 @@ min-width: 100%;
 overflow-x: hidden ; 
 position: absolute;
 }
-
-header{
-  margin-left: 3px;
-}
-
+ 
 .navbar{
 height: 60px;
 color:#fff;
@@ -45,7 +41,7 @@ display: none;
 }
 
 .logo{
-background-image: url(images/amazon_logo.png);
+background-image: url(../images/amazon_logo.png);
 background-size: cover;
 height: 50px;
 width:100%;
@@ -218,7 +214,7 @@ display: none;
 /* Hero Section */
 
 .hero{
-  background: url(images/hero_image.jpg);
+  background: url(../images/hero_image.jpg);
   background-size:cover;
   height: 400px;
   width: 100%;
@@ -337,7 +333,7 @@ display: none;
 }
 
 .p-img{
-  background-image: url(images/amazon_logo.png);
+  background-image: url(../images/amazon_logo.png);
   background-size: cover;
   height: 50px;
   width:100px;
@@ -353,7 +349,10 @@ display: none;
   ##Screen = B/w 481px to 767px
 */
 
-@media (min-width: 250px) and (max-width: 670px) {
+/* @mixin common-styles {
+} */
+
+@media (min-width: 250px) and (max-width: 900px) {
   body{ 
     min-width: 100%;
     overflow-x: hidden ; 
@@ -440,8 +439,7 @@ display: none;
     margin: 10px auto 7px;
     min-width: 93%;
     max-width: 95%;
-
-
+ 
   }
 
   .search-amazon{ 
@@ -530,3 +528,4 @@ display: none;
   
 }
  
+  
