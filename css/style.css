@@ -8,9 +8,9 @@
 }
 
 body{ 
-  min-width: 100vw;
-  overflow-x: hidden ;
-  
+  min-width: 100%;
+  overflow-x: hidden ; 
+  position: absolute;
 }
 
 .navbar{
@@ -117,11 +117,14 @@ cursor: pointer;
 
 .lang-select{
     height: 15px;
+    margin-left: 3px;
     cursor: pointer;
 }
 
 .lang-icon{
-    height: 16px;
+   padding: 5px;
+   display: flex;
+   height: 16px;
 }
 
 /* Sign In */
@@ -230,7 +233,7 @@ cursor: pointer;
      padding: 10px 14px;
      background-color: #f5f6f6;
      color:#0f1111;
-     height: 22px;
+     height: auto;
      width: 90%;
 }
 .hero-clickable{
@@ -238,6 +241,7 @@ cursor: pointer;
     font: 1em sans-serif;
 }
 
+/* shop section */
 .shop-section{
     display: flex;
     justify-content: space-evenly;
@@ -314,7 +318,7 @@ cursor: pointer;
 .panel3{
     background-color: #232f3e;
     height: 50px;
-    width: 100%;
+    max-width: 100%;
     border-top: 1px solid #fff;
     display: flex;
     justify-content: center;
@@ -324,12 +328,12 @@ cursor: pointer;
     background-image: url(images/amazon_logo.png);
     background-size: cover;
     height: 50px;
-    width:100px;
+    max-width:100px;
     cursor: pointer;
 }
 
 
-/* Responsive for all other devices*/
+/* ---------------------------------Responsive for all other devices-------------------------------------------------------*/
 
   /*
     ##Device = Low Resolution Tablets, Mobiles (Landscape)
@@ -337,11 +341,16 @@ cursor: pointer;
   */
 
   @media (min-width: 200px) and (max-width: 670px) {
- 
+    body{ 
+      min-width: 100%;
+      overflow-x: hidden ; 
+      position: absolute;
+    }
+    
 
     .navbar{
         height: 48px;
-        width: 100%;
+        max-width: 100%;
         background: #232f3e;
         justify-content:  flex-start;
     }
@@ -350,11 +359,11 @@ cursor: pointer;
       border: none;
     }
 
-    .nav-loc, .nav-lang, .nav-returns,.nav-search, .mob-none , .cart-text{
+    .nav-loc,  .mob-none , .cart-text{
         display: none;
       }
      
-       
+       /* change menuIcondisplay ot mobMenuIcon */
 
       .pannel, .mobLinks, .menuIcondisply, .pan-shop{
         display: block;
@@ -416,7 +425,7 @@ cursor: pointer;
       justify-content: center;
       margin: 10px auto 7px;
       height: 40px;
-      width: 95%;
+      min-width: 95%;
 
     }
 
@@ -447,11 +456,31 @@ cursor: pointer;
     margin-bottom: 20px;
     
     }
-
-   
-    
-    
-
+    /* Hero section */
+    .hero{ 
+      background-size:cover;
+      height: 250px;   
+      
+    }
+    .hero-msg{
+      margin-top: 50px;
+      font: 0.85rem sans-serif;
+      /* padding: 5px 10px; */
+      /* display: flex;
+      align-items: center;
+      justify-content: center; */
+      padding: 5px 14px;
+      margin-bottom: 20px;
+      /* background-color: #f5f6f6;
+      color:#0f1111;
+      height: 22px; */
+      width: 86%;
+ }
+ .hero-clickable{
+     /* color:#007185;
+     font: 1em sans-serif; */
+ }
+ 
   }
 
   /*

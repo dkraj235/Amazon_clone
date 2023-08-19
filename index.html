@@ -2,11 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0" >   
 
     <title>Amazon Clone</title>
     <link rel="icon" href="css/images/payment.svg">
     <link rel="stylesheet" href="css/style.css">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto&display=swap" rel="stylesheet">
@@ -32,7 +33,7 @@
 
 
 
-           <div class="nav-loc border">
+           <div class="nav-loc mob-none border">
             <p class="loc-first">Deliver to</p>
             <div class="add-icon">
                 <i class="fa-solid fa-location-dot"></i>
@@ -40,7 +41,7 @@
             </div>
            </div>
 
-           <div class="nav-search">
+           <div class="nav-search mob-none">
             <select  class="search-select" id="">
                 <option value="">All</option>
                 <option value="">Boy</option>
@@ -55,7 +56,7 @@
 
          <!-- Nav lang -->
 
-           <div class="nav-lang border">
+           <div class="nav-lang mob-none border">
             <div class="lang-icon">
                 <i class="fa-solid fa-flag-usa"></i>
                 <select class="lang-select" name="" id="">
@@ -64,26 +65,23 @@
             </div>
            </div>
 
+           <!-- Nav Account -->
            <div class="nav-accnt border">
             <div class="hello">
                <p class="mob-none"><span>Hello,sign in</span></p>
-            </div>
-
-
+            </div> 
               <div class="deskNone">
                 <p class="mob-sign"><span>sign in›&nbsp;</span> </p>
-               <i class="fa-regular fa-2x fa-user user-icon"> </i>
-
-              </div>
-
-
+               <i class="fa-regular fa-2x fa-user user-icon"> </i> 
+              </div> 
+              
             <div class="sign-line-2">
                <p class="mob-none">Account & Lists</p>
             </div>
            </div>
 
-           <div class="nav-returns border">
-            <div class="returns">
+           <div class="nav-returns mob-none border">
+            <div class="returns  ">
                <p><span>Returns</span></p>
             </div>
             <div class="sign-line-2">
@@ -91,16 +89,16 @@
             </div>
            </div>
 
-           <div class="nav-cart border">
+           <div class="nav-cart   border">
             <div class="cart">
                 <i class="fa-solid fa-2x fa-cart-shopping cart-icon"></i>
-                <span class="cart-text">Cart</span>
+                <span class="cart-text mob-none">Cart</span>
             </div>
            </div>
 
         </div>
 
-
+<!-- Mobile Navbar Search -->
         <div class="mobNav-search">
          
          <input placeholder="Search Amazon.in" type="text" class="search-amazon">
@@ -122,6 +120,7 @@
                 <div class="shop-by">
                     <span class="pan-shop">Shop By</span> 
                 </div>
+                <!-- Mob Pannel -->
                  
               <div class="mobLinks">
                 <a class="mobPannel" href="#">Catergories</a>
@@ -130,7 +129,7 @@
                 <a class="mobPannel" href="#">Sells </a> 
               </div> 
             </div>
-            <div class="links">
+            <div class="links mob-none">
                 <a class="pan-anc border" href="#">Today's Deals</a>
                 <a class="pan-anc border" href="#">Customere Service</a>
                 <a class="pan-anc border" href="#">Registry</a>
@@ -143,6 +142,8 @@
             </div>
         </div>
     </header>
+       
+       <!---------------------- Landing page Box Image ------------------->
 
         <div class="hero">
             <div class="hero-msg">
@@ -176,7 +177,7 @@
             </div>
             <div class="box4 box">
                 <div class="box-content">
-                    <h2>shop best-selling categories</h2>
+                    <h2>shop best-selling  </h2>
                     <div class="box-image" style="background: url(css/images/box4_image.jpg);"></div>
                     <p class="hero-clickable">shop more</p>
                 </div>
@@ -199,6 +200,9 @@
                     <p class="hero-clickable">shop now</p>
                 </div>
             </div>
+
+          
+
             <div class="box">
                 <div class="box-content">
                     <h2>Find your Ideal TV</h2>
@@ -208,14 +212,14 @@
             </div>
             <div class="box">
                 <div class="box-content">
-                    <h2>Shop activity trackers and smartwatches</h2>
+                    <h2>Shop activity trackers and </h2>
                     <div class="box-image" style="background: url(css/images/box8_image.jpg);"></div>
                     <p class="hero-clickable">shop more</p>
                 </div>
             </div>
         </div>
 
-
+    <!-- ---------------Footer-------------------------------------- -->
 
         <footer>
             <div class="panel-1">
