@@ -438,7 +438,8 @@ display: none;
     display: flex;
     justify-content: flex-start;
     margin: 10px auto 7px;
-    max-width: 90%;
+    min-width: 93%;
+    max-width: 95%;
 
 
   }
@@ -448,6 +449,7 @@ display: none;
       border-radius: 8px 0px 0px 8px;
       padding: 5px 0px 5px 10px ;
       height: 46px; 
+      width: 100%;
   }
  .search-icon{
   border-radius: 0px 8px 8px 0px;
